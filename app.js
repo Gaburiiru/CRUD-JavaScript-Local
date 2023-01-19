@@ -39,7 +39,7 @@ function agregarEmpleado(){
     listaEmpleados.push({...objEmpleado});
 
     mostrarEmpleados();
-    
+
     formulario.reset();
 
     limpiarObjeto();
@@ -61,7 +61,7 @@ function mostrarEmpleados(){
         const {id, nombre, puesto}= empleado;
 
         const parrafo =document.createElement('p');
-        parrafo.textContent = `${id} - ${nombre} - ${puesto} - `;
+        parrafo.textContent = ` - ${id} - ${nombre} - ${puesto} - `;
         parrafo.dataset.id = id;
 
         const editarBoton = document.createElement('button');
