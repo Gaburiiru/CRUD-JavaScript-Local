@@ -32,7 +32,7 @@ body{
 /*ESTILOS FORMULARIOS*/
 .contenedor .div-formulario{
     width: 50vh;
-    height: 30vh;
+    height: 250px;
     margin: 15px 15px;
     background-color: rgb(42, 43, 54);
     border-radius: 10px;
@@ -149,7 +149,6 @@ hr{
 @media (max-width: 650px) {
     .btn{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
