@@ -23,15 +23,16 @@ body{
 
 .contenedor{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*ESTILOS FORMULARIOS*/
 .contenedor .div-formulario{
-    width: 30%;
-    height: 250px;
+    width: 50vh;
+    height: 30vh;
     margin: 15px 15px;
     background-color: rgb(42, 43, 54);
     border-radius: 10px;
@@ -80,8 +81,8 @@ body{
 
 /*ESTILO LISTADO*/
 .contenedor .div-listado{
-    width: 55%;
-    height: calc(100% - 50px);
+    width: 100vh;
+    height: auto;
     margin: 15px 15px;
     background-color: rgb(42, 43, 54);
     display: flex;
@@ -143,4 +144,13 @@ hr{
 .btn-eliminar:hover{
     background-color: rgb(180, 25, 25);
     transition: 0.7s;
+}
+
+@media (max-width: 650px) {
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
